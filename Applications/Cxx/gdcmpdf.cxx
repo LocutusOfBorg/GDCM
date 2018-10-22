@@ -37,7 +37,7 @@
 static std::string getInfoDate(Dict *infoDict, const char *key)
 {
   Object obj;
-  char *s;
+  const char *s;
   int year, mon, day, hour, min, sec, n;
   struct tm tmStruct;
   //char buf[256];
@@ -104,7 +104,7 @@ static std::string getInfoDate(Dict *infoDict, const char *key)
 static std::string getInfoString(Dict *infoDict, const char *key, UnicodeMap *uMap, GBool & unicode)
 {
   Object obj;
-  GooString *s1;
+  const GooString *s1;
   GBool isUnicode = gFalse;
   Unicode u;
   char buf[8];
